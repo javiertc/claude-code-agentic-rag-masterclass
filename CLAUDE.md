@@ -3,11 +3,11 @@
 RAG app with chat (default) and document ingestion interfaces. Config via env vars, no admin UI.
 
 ## Stack
-- Frontend: React + Vite + Tailwind + shadcn/ui
-- Backend: Python + FastAPI
-- Database: Supabase (Postgres, pgvector, Auth, Storage, Realtime)
+- Frontend: React 19 + Vite 7 + Tailwind 4 + shadcn/ui + TypeScript 5.9
+- Backend: Python 3.9+ + FastAPI 0.128 + Pydantic 2.12 + OpenAI SDK 2.17
+- Database: Supabase 2.27 (Postgres, pgvector, Auth, Storage, Realtime)
 - LLM: OpenAI (Module 1), OpenRouter (Module 2+)
-- Observability: LangSmith
+- Observability: LangSmith 0.4
 
 ## Rules
 - Python backend must use a `venv` virtual environment
@@ -35,6 +35,11 @@ RAG app with chat (default) and document ingestion interfaces. Config via env va
 2. **Build** - Execute the plan to implement the feature
 3. **Validate** - Test and verify the implementation works correctly. Use browser testing where applicable via an appropriate MCP
 4. **Iterate** - Fix any issues found during validation
+
+## Testing
+- Test user: `claudetest@gmail.com` / `YZH7hmw*mke4qyk_ckb`
+- Frontend: http://localhost:5174
+- Backend: http://localhost:8001
 
 ## Progress
 Check PROGRESS.md for current module status. Update it as you complete tasks.
